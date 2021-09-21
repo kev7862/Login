@@ -30,14 +30,14 @@ Author URL: https://websitekali.co.ke
             <div class="w3l-form-info">
                 <div class="w3_info">
                     <h2>Login</h2>
-                    <form action="#" method="post">
+                    <form action="login.php" method="post">
                         <div class="input-group">
                             <span><i class="fas fa-user" aria-hidden="true"></i></span>
-                            <input type="email" placeholder="Username or Email" required="">
+                            <input type="email" name="uname" placeholder="Username or Email" required="">
                         </div>
                         <div class="input-group">
                             <span><i class="fas fa-key" aria-hidden="true"></i></span>
-                            <input type="Password" placeholder="Password" required="">
+                            <input type="Password" name="password" placeholder="Password" required="">
                         </div>
                         <div class="form-row bottom">
                             <div class="form-check">
