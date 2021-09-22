@@ -6,7 +6,7 @@ session_start();
 include "db_connect.php";
 
 //validating data entered in the form
-if (isset($_post['uname']) && isset($_post['password'])) {
+if (isset($_POST['uname']) && isset($_post['password'])) {
   function validate($data){
     $data = trim($data);
     $data= stripslashes($data);
@@ -17,8 +17,8 @@ if (isset($_post['uname']) && isset($_post['password'])) {
 }
 
 //Creating variables for username and password
-$uname = validate($_post['uname']);
-$password = validate($_post['password']);
+$uname = validate($_POST['uname']);
+$password = validate($_POST['password']);
 
 //checking if the input field is empty
 if (empty($uname)) {
